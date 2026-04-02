@@ -13,21 +13,15 @@ extern "C" {
 #include "lvgl.h"
 
 #include "ui_helpers.h"
-#include "components/ui_comp.h"
-#include "components/ui_comp_hook.h"
 #include "ui_events.h"
 
 ///////////////////// SCREENS ////////////////////
-#include "screens/ui_MainScreen.h"
+#include "screens/ui_Screen1.h"
 
 ///////////////////// VARIABLES ////////////////////
 
 // EVENTS
 extern lv_obj_t * ui____initial_actions0;
-
-// FONTS
-LV_FONT_DECLARE(ui_font_NanumBrush);
-LV_FONT_DECLARE(ui_font_Font1);
 
 // UI INIT
 void ui_init(void);

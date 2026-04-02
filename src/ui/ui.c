@@ -29,18 +29,16 @@ lv_obj_t * ui____initial_actions0;
 
 void ui_init(void)
 {
-    LV_EVENT_GET_COMP_CHILD = lv_event_register_id();
-
     lv_disp_t * dispp = lv_disp_get_default();
     lv_theme_t * theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED),
                                                false, LV_FONT_DEFAULT);
     lv_disp_set_theme(dispp, theme);
-    ui_MainScreen_screen_init();
+    ui_Screen1_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
-    lv_disp_load_scr(ui_MainScreen);
+    lv_disp_load_scr(ui_Screen1);
 }
 
 void ui_destroy(void)
 {
-    ui_MainScreen_screen_destroy();
+    ui_Screen1_screen_destroy();
 }
